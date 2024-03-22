@@ -1,0 +1,12 @@
+{
+  "folders": [
+    {
+      "name": "user_mng",
+      "path": ".."
+    },
+    {
+      "name": "app",
+      "path": "."
+    }
+  ]
+}
