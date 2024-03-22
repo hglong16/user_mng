@@ -8,5 +8,8 @@
       "name": "app",
       "path": "."
     }
-  ]
+  ],
+  "settings": {
+    "conventionalCommits.scopes": ["BE"]
+  }
 }
