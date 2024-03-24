@@ -19,6 +19,8 @@ pytest = "^8.1.1"
 types-python-jose = "^3.3.4.20240106"
 coverage = "^7.4.4"
 types-passlib = "^1.7.7.20240311"
+isort = "^5.13.2"
+autoflake = "^2.3.1"
 
 [build-system]
 requires = ["poetry-core"]

@@ -10,6 +10,7 @@
     }
   ],
   "settings": {
-    "conventionalCommits.scopes": ["BE"]
+    "conventionalCommits.scopes": ["BE"],
+    "cSpell.words": ["changethis", "psycopg"]
   }
 }
