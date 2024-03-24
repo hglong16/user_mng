@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   db:
-    image: postgres:13
+    image: postgres:12
     restart: always
     env_file:
       - .env
@@ -13,6 +13,7 @@ services:
       - POSTGRES_DB=${POSTGRES_DB?Variable not set}
     volumes:
       - app-db-data:/var/lib/postgresql/data
+
   adminer:
     image: adminer
     restart: always
@@ -47,7 +48,8 @@ services:
       - SENTRY_DSN=${SENTRY_DSN}
     build:
       context: ./backend
-      args: INSTALL_DEV:${INSTALL_DEV-false}
+      args:
+        INSTALL_DEV: ${INSTALL_DEV-false}
 
 volumes:
   app-db-data:
